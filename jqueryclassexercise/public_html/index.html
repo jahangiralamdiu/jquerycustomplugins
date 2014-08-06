@@ -25,14 +25,22 @@ and open the template in the editor.
 
     </head>
     <body>
+        
+        <h2>My name is </h2>
         <input id="check1" type="checkbox" checked="checked">
         <label id="lblId" for="check1">Check me</label>
         <p ></p>
 
 
         <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-        
-        <script src="js/jquery.hello-world.js" type="text/javascript"></script>
+
+        <script src="js/jquery.helloworld.js" type="text/javascript"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('h2').helloWorld('¡Hola, Jahangir!');
+            });
+        </script>
 
         <script>
 
@@ -51,7 +59,7 @@ and open the template in the editor.
                         css({'background-color': 'red',
                             'display': 'block',
                             'width': '300px'
-      }));
+                        }));
 
                 $('#lblId').attr('for', 'ASHIQ');
 

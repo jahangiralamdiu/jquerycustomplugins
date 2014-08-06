@@ -6,10 +6,12 @@
 
 (function($) {
 
-    $.fn.helloWorld = function() {
+    $.fn.helloWorld = function( customText ) {
 
-        this.each( function() {
-            $(this).text("Hello, World!");
+        return this.each( function() {
+            $(this).text( customText );
         });
 
-    }}(jQuery));
+    }
+
+}(jQuery));
