@@ -43,13 +43,17 @@ and open the template in the editor.
                     })
                     .change();
 
-             $(document).ready(function(){
-                 
-                 console.log($('#lblId').attr('for', 'ASHIQ').css('background-color', 'red'));
-                 
-                 $('#lblId').attr('for', 'ASHIQ');
-                 
-             });
+            $(document).ready(function() {
+
+                console.log($('#lblId').attr('for', 'ASHIQ').
+                        css({'background-color': 'red',
+                            'display': 'block',
+                            'width': '300px'
+      }));
+
+                $('#lblId').attr('for', 'ASHIQ');
+
+            });
 
         </script>
 
